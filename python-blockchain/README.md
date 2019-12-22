@@ -1,4 +1,4 @@
-**Activate the virual environment**
+**Activate the virtual environment**
 
 ```
 blockchain-env\Scripts\activate
@@ -15,4 +15,11 @@ Make sure to activate virtual environment.
 
 ```
 python -m pytest backend/tests
+```
+
+**Run the application and API**
+Make sure to activate the virtual environment.
+
+```
+python3 -m backend.app
 ```
