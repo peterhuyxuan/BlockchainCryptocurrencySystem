@@ -44,7 +44,7 @@ class Block:
 
     def to_json(self):
         """
-        Serialize the block into a dictionary of its attributes
+        Serialise the block into a dictionary of its attribute
         """
         return self.__dict__
 

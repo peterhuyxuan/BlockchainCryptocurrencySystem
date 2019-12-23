@@ -7,8 +7,8 @@ blockchain = Blockchain()
 
 
 @app.route('/')
-def test():
-    return 'Welcome to the blockchain'
+def route_default():
+    return 'Welcome to the Blockchain'
 
 
 @app.route('/blockchain')
@@ -22,9 +22,7 @@ def route_blockchain_mine():
 
     blockchain.add_block(transaction_data)
 
-    block = blockchain.chain[-1]
-
-    return jsonify(block.to_json())
+    return jsonify(blockchain.chain[-1].to_json())
 
 
 app.run()
