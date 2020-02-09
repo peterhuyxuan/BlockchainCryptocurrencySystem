@@ -64,6 +64,7 @@ class Block:
         while hex_to_binary(hash)[0:difficulty] != '0' * difficulty:
             nonce += 1
             timestamp = time.time_ns()
+            difficulty = Block.adjust_difficulty(last_block, timestamp)
             hash = crypto_hash(timestamp, last_hash, data, difficulty, nonce)
 
         return Block(timestamp, last_hash, hash, data, difficulty, nonce)
@@ -81,6 +82,13 @@ class Block:
         #     # and genesis + nonce
         # )
         return Block(**GENESIS_DATA)
+
+    @staticmethod
+    def from_json(block_json):
+        """
+        Deserialise a block's json representation back into a block instance.
+        """
+        return Block(**block_json)
 
     @staticmethod
     def adjust_difficulty(last_block, new_timestamp):
