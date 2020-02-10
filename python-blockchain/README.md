@@ -7,7 +7,13 @@ cd python-blockchain
 **Activate the virtual environment**
 
 ```
-blockchain-env\Scripts\activate
+blockchain-env/Scripts/activate
+```
+
+Using activating virtual environment using Git Bash
+
+```
+. blockchain-env/Scripts/activate
 ```
 
 **Install all packages**

@@ -5,10 +5,12 @@ import random
 from flask import Flask, jsonify
 
 from backend.blockchain.blockchain import Blockchain
+from backend.wallet.wallet import Wallet
 from backend.pubsub import PubSub
 
 app = Flask(__name__)
 blockchain = Blockchain()
+wallet = Wallet()
 pubsub = PubSub(blockchain)
 
 
