@@ -26,7 +26,7 @@ pip install -r requirements.txt
 Make sure to activate virtual environment.
 
 ```
-python -m pytest backend\tests
+python -m pytest backend/tests
 ```
 
 **Run the application and API**
@@ -45,7 +45,13 @@ python -m backend.pubsub
 **Run a peer instance**
 
 ```
-set PEER=True && python -m backend.app
+export PEER=True && python -m backend.app
 ```
 
-Use 'set' instead of 'export'
+Use 'set' instead of 'export' when using Windows "cmd.exe" Command Prompt
+
+**Test application script**
+
+```
+python -m backend.scripts.test_app
+```
