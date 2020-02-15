@@ -37,12 +37,14 @@ python -m backend.app
 ```
 
 **Test pub/sub**
+Make sure to activate the virtual environment.
 
 ```
 python -m backend.pubsub
 ```
 
 **Run a peer instance**
+Make sure to activate the virtual environment.
 
 ```
 export PEER=True && python -m backend.app
@@ -50,8 +52,25 @@ export PEER=True && python -m backend.app
 
 Use 'set' instead of 'export' when using Windows "cmd.exe" Command Prompt
 
+**Seed the backend with data**
+Make sure to activate the virtual environment.
+
+```
+export SEED_DATA=True && python -m backend.app
+```
+
+Use 'set' instead of 'export' when using Windows "cmd.exe" Command Prompt
+
 **Test application script**
+Make sure to activate the virtual environment.
 
 ```
 python -m backend.scripts.test_app
+```
+
+**Run the frontend**
+In the frontend directory:
+
+```
+npm run start
 ```
