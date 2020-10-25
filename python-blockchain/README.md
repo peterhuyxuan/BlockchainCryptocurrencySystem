@@ -68,6 +68,18 @@ Make sure to activate the virtual environment.
 python -m backend.scripts.test_app
 ```
 
+**Change into the 'frontend' directory to setup the frontend**
+
+```
+cd frontned
+```
+
+**Install all the packages**
+
+```
+npm install
+```
+
 **Run the frontend**
 In the frontend directory:
 
