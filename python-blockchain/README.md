@@ -71,7 +71,7 @@ python -m backend.scripts.test_app
 **Change into the 'frontend' directory to setup the frontend**
 
 ```
-cd frontned
+cd frontend
 ```
 
 **Install all the packages**
